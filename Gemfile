@@ -6,6 +6,10 @@ group :production do
   gem 'rails_12factor', '0.0.2'
 end
 
+group :development, :test do # <<<< :development, not devlopment
+  gem 'sqlite3'
+end
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
